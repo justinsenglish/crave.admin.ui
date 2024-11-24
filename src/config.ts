@@ -1,5 +1,5 @@
 // types
-import { DefaultConfigProps } from 'types/config';
+import { DefaultConfigProps, AuthProvider } from 'types/config';
 
 // ==============================|| THEME CONSTANT ||============================== //
 
@@ -42,6 +42,8 @@ export enum DropzopType {
   STANDARD = 'standard'
 }
 
+export const APP_AUTH: AuthProvider = AuthProvider.FIREBASE;
+
 // ==============================|| THEME CONFIG ||============================== //
 
 const config: DefaultConfigProps = {
@@ -49,7 +51,7 @@ const config: DefaultConfigProps = {
   i18n: 'en',
   menuOrientation: MenuOrientation.VERTICAL,
   miniDrawer: false,
-  container: true,
+  container: false,
   mode: ThemeMode.LIGHT,
   presetColor: 'default',
   themeDirection: ThemeDirection.LTR

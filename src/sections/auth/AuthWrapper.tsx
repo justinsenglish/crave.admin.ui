@@ -5,7 +5,7 @@ import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid';
 
 // project import
-import AuthFooter from 'components/cards/AuthFooter';
+// import AuthFooter from 'components/cards/AuthFooter';
 import Logo from 'components/logo';
 import AuthCard from './AuthCard';
 
@@ -23,7 +23,7 @@ export default function AuthWrapper({ children }: Props) {
     <Box sx={{ minHeight: '100vh' }}>
       <AuthBackground />
       <Grid container direction="column" justifyContent="flex-end" sx={{ minHeight: '100vh' }}>
-        <Grid item xs={12} sx={{ ml: 3, mt: 3 }}>
+        <Grid item xs={12} sx={{ ml: 3, mt: 0 }}>
           <Logo />
         </Grid>
         <Grid item xs={12}>
@@ -41,7 +41,7 @@ export default function AuthWrapper({ children }: Props) {
           </Grid>
         </Grid>
         <Grid item xs={12} sx={{ m: 3, mt: 1 }}>
-          <AuthFooter />
+          {/* <AuthFooter /> */}
         </Grid>
       </Grid>
     </Box>
