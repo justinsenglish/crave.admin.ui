@@ -1,11 +1,11 @@
 // material-ui
 import Box from '@mui/material/Box';
 import FormControl from '@mui/material/FormControl';
-import InputAdornment from '@mui/material/InputAdornment';
-import OutlinedInput from '@mui/material/OutlinedInput';
+// import InputAdornment from '@mui/material/InputAdornment';
+// import OutlinedInput from '@mui/material/OutlinedInput';
 
 // assets
-import SearchOutlined from '@ant-design/icons/SearchOutlined';
+// import SearchOutlined from '@ant-design/icons/SearchOutlined';
 
 // ==============================|| HEADER CONTENT - SEARCH ||============================== //
 
@@ -13,7 +13,7 @@ export default function Search() {
   return (
     <Box sx={{ width: '100%', ml: { xs: 0, md: 1 } }}>
       <FormControl sx={{ width: { xs: '100%', md: 224 } }}>
-        <OutlinedInput
+        {/* <OutlinedInput
           size="small"
           id="header-search"
           startAdornment={
@@ -26,7 +26,7 @@ export default function Search() {
             'aria-label': 'weight'
           }}
           placeholder="Ctrl + K"
-        />
+        /> */}
       </FormControl>
     </Box>
   );

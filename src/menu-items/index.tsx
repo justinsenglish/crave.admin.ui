@@ -1,5 +1,5 @@
 // project import
-import samplePage from './sample-page';
+// import samplePage from './sample-page';
 // import other from './other';
 // import pages from './pages';
 import franchises from './franchises';
@@ -11,7 +11,7 @@ import { NavItemType } from 'types/menu';
 
 const menuItems: { items: NavItemType[] } = {
   // items: [samplePage, pages, other]
-  items: [samplePage, franchises]
+  items: [franchises]
 };
 
 export default menuItems;

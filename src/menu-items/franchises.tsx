@@ -1,6 +1,3 @@
-// third-party
-import { FormattedMessage } from 'react-intl';
-
 // assets
 import DollarOutlined from '@ant-design/icons/DollarOutlined';
 import LoginOutlined from '@ant-design/icons/LoginOutlined';
@@ -17,12 +14,12 @@ const icons = { DollarOutlined, LoginOutlined, PhoneOutlined, RocketOutlined };
 
 const pages: NavItemType = {
   id: 'group-franchises',
-  title: <FormattedMessage id="Franchises" />,
+  title: 'Franchises',
   type: 'group',
   children: [
     {
       id: 'royalties',
-      title: <FormattedMessage id="Royalties" />,
+      title: 'Royalties',
       type: 'item',
       url: '/franchises/royalties',
       icon: icons.DollarOutlined

@@ -4,7 +4,8 @@ import { lazy } from 'react';
 import Loadable from 'components/Loadable';
 import DashboardLayout from 'layout/Dashboard';
 
-const RoyaltiesPage = Loadable(lazy(() => import('pages/franchises/royalties')));
+const FranchiseListPage = Loadable(lazy(() => import('pages/franchises/list')));
+const FranchiseRoyaltiesPage = Loadable(lazy(() => import('pages/franchises/royalties')));
 
 // ==============================|| MAIN ROUTING ||============================== //
 
@@ -16,8 +17,12 @@ const FranchiseRoutes = {
       element: <DashboardLayout />,
       children: [
         {
-          path: 'royalties',
-          element: <RoyaltiesPage />
+          path: '/',
+          element: <FranchiseListPage />
+        },
+        {
+          path: ':id/royalties',
+          element: <FranchiseRoyaltiesPage />
         }
       ]
     }
